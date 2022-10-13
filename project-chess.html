@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Daily Trivia Display</title>
-  <meta name="description" content="Daily Trivia Display" />
+  <title>Chess</title>
+  <meta name="description" content="Chess Project Details" />
 
   <link rel="stylesheet" href="css/style.css" />
 
@@ -34,7 +34,9 @@
             <a href="./index.html#about" class="header__link">About </a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./index.html#projects" class="header__link">Projects </a>
+            <a href="./index.html#projects" class="header__link">
+              Projects
+            </a>
           </li>
         </ul>
         <div class="header__main-ham-menu-cont">
@@ -68,15 +70,15 @@
   </header>
   <section class="project-cs-hero">
     <div class="project-cs-hero__content">
-      <h1 class="heading-primary">Daily Trivia Display</h1>
+      <h1 class="heading-primary">Chess</h1>
       <div class="project-cs-hero__info">
         <p class="text-primary">
-          Taking dorm door decorations to the next level.
+          A chess application made in Java.
+          Includes a computer opponent that employs the minimax algorithm to play at a basic level.
         </p>
       </div>
       <div class="project-cs-hero__cta">
-        <a href="https://github.com/Priyanshu4/H2O-daily-trivia" class="btn btn--bg" target="_blank">GitHub
-          Repository</a>
+        <a href="https://github.com/Priyanshu4/Chess" class="btn btn--bg" target="_blank">GitHub Repository</a>
       </div>
     </div>
   </section>
@@ -84,55 +86,18 @@
     <div class="main-container">
       <div class="project-details__content">
         <div class="project-details__showcase-img-cont">
-          <img src="./assets/jpeg/project-mockup-example.jpeg" alt="Project Image"
-            class="project-details__showcase-img" />
+          <img src="./assets/png/project-chess-img.PNG" alt="Project Image" class="project-details__showcase-img" />
         </div>
         <div class="project-details__content-main">
           <div class="project-details__desc">
             <h3 class="project-details__content-title">Project Overview</h3>
             <p class="project-details__desc-para">
-              College students typically decorate the space around their dorm room doors.
-              I took the decorations to the next level with an interactive screen that displays a new trivia question
-              each day. Each day at midnight, it automatically puts up a new trivia question and background image from
-              its internal questions list.
-              Throughout the day, people can test their knowledge and answer the question by pushing one of the 4
-              buttons on the display.
-              When someone presses a button to answer the question, it tells them if they were correct and shows them
-              the answer statistics from the other people who answered.
+              I made a chess application in Java.
+              It allows two people to play against each other on the same computer, or for one person to play against
+              the built-in AI.
+              The built-in AI plays at a basic level using a simple implementation of the minimax algorithm with
+              alpha-beta pruning.
             </p>
-            <p class="project-details__desc-para">
-              To make this project, I used a Raspberry Pi Pico, Raspberry Pi's microcontroller chip with 256 kB of RAM
-              and 2 MB flash memory.
-              For the display, I used the Pimoroni Pico Display Pack 2.0. It's a 2 inch LCD screen with 320 by 240
-              resolution.
-              It also has four built-in buttons, which is perfect for multiple choice trivia questions with 4 answer
-              choices.
-              The software for the Pico was developed in C++ and using the CMake build system.
-              The case for the microcontroller and display was 3D printed.
-              The microcontroller and screen are powered with a portable power bank.
-            </p>
-            <p class="project-details__desc-para">
-              One of the challenges I faced in this project was storing images on the Pico. Since the Pico has no
-              filesystem, images cannot be stored in typical file formats.
-              Instead, I developed a Python script to convert PNG images into a C style array of unsigned chars (single
-              byte datatype) to encode the image data.
-              Because the Pico only has 2 MB of flash memory, I stored the images in RGB332 format. In this format, each
-              pixel only requires one byte (8 bits) to store color information.
-              3 bits are used for red, 3 bits for green, and 2 bits for blue. Typically, colors are stored in RGB888 (1
-              byte for each color), so 3 bytes are required to encode the color information of a single pixel.
-              Using RGB332 allowed me to use one-third the memory and still have great looking images.
-            </p>
-          </div>
-          <div class="project-details__tools-used">
-            <h3 class="project-details__content-title">Tools Used</h3>
-            <div class="skills">
-              <div class="skills__skill">C++</div>
-              <div class="skills__skill">CMake</div>
-              <div class="skills__skill">Python</div>
-              <div class="skills__skill">Raspberry Pi Pico</div>
-              <div class="skills__skill">LCD Screen</div>
-              <div class="skills__skill">Git</div>
-            </div>
           </div>
         </div>
       </div>
